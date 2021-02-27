@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Bold.eot');
+    src: url('./fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Poppins-Bold.woff2') format('woff2'),
+        url('./fonts/Poppins-Bold.woff') format('woff'),
+        url('./fonts/Poppins-Bold.ttf') format('truetype'),
+        url('./fonts/Poppins-Bold.svg#Poppins-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-SemiBold.eot');
+    src: url('./fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('./fonts/Poppins-SemiBold.woff') format('woff'),
+        url('./fonts/Poppins-SemiBold.ttf') format('truetype'),
+        url('./fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Regular.eot');
+    src: url('./fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Poppins-Regular.woff2') format('woff2'),
+        url('./fonts/Poppins-Regular.woff') format('woff'),
+        url('./fonts/Poppins-Regular.ttf') format('truetype'),
+        url('./fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Medium.eot');
+    src: url('./fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Poppins-Medium.woff2') format('woff2'),
+        url('./fonts/Poppins-Medium.woff') format('woff'),
+        url('./fonts/Poppins-Medium.ttf') format('truetype'),
+        url('./fonts/Poppins-Medium.svg#Poppins-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/CormorantGaramond-Bold.eot');
+    src: url('./fonts/CormorantGaramond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/CormorantGaramond-Bold.woff2') format('woff2'),
+        url('./fonts/CormorantGaramond-Bold.woff') format('woff'),
+        url('./fonts/CormorantGaramond-Bold.ttf') format('truetype'),
+        url('./fonts/CormorantGaramond-Bold.svg#CormorantGaramond-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class] {
+  padding: 0;
+  list-style: none;
+}
+input, button {
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+}
+input:focus, button:focus  {
+    outline: none;
+}
+input::placeholder {
+    color: inherit;
+}
+body, h1, h2, p, ul[class], li, span {
+  margin: 0;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+.fa {
+    display: block;
+}
