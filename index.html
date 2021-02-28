@@ -9,47 +9,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Document</title>
 </head>
-<body>
+<body onload="window_onload()">
     <div class="page">
         <div class="top">
             <span class="top-tittle">We deliver Worldwide</span>
             <a class="top-location"><i class="fa fa-location"></i>Our stores</a>
         </div>
-        <div class="banner">
-            <div class="banner-layout">
-                <header class="header">
-                    <div class="header-top">
-                        <div class="header-top__logo">
-                            <a href="#">
-                                <span>Aurora</span>
-                            </a>
+        <div class="banner" id="slider-container">
+            <div id="slider-inner">
+                <div class="banner-layout">
+                    <header class="header">
+                        <div class="header-gradient">
+                            <div class="header-top">
+                                <div class="header-top__logo">
+                                    <a href="#">
+                                        <span>Aurora</span>
+                                    </a>
+                                </div>
+                                <div class="header-top__search">
+                                    <form>
+                                        <input type="text" placeholder="What are you looking for?" name="search" class="search-form">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                      </form>
+                                </div>
+                                <div class="header-top__authorization">
+                                    <a href="#">Sign in | Register<i class="fa fa-basket"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="header-top__search">
-                            <form>
-                                <input type="text" placeholder="What are you looking for?" name="search" class="test">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                              </form>
+                        <div class="header-menu">
+                            <nav class="header-menu__nav">
+                                <ul class="header-menu__list">
+                                    <li class="header-menu__item"><a href="#">what’s new</a></li>
+                                    <li class="header-menu__item"><a href="#">women</a></li>
+                                    <li class="header-menu__item"><a href="#">accessories</a></li>
+                                    <li class="header-menu__item"><a href="#">kids</a></li>
+                                    <li class="header-menu__item"><a href="#">beauty</a></li>
+                                    <li class="header-menu__item"><a href="#">outlet</a></li>
+                                    <li class="header-menu__item"><a href="#">stories</a></li>
+                                </ul>
+                            </nav>
                         </div>
-                        <div class="header-top__authorization">
-                            <span>Sign in | Register<i class="fa fa-basket"></i></span>
-                        </div>
+                    </header>
+                    <div class="banner-content">
+                        <span>Hello! Welcome to Aurora</span>
                     </div>
-                    <div class="header-menu">
-                        <nav class="header-menu__nav">
-                            <ul class="header-menu__list">
-                                <li class="header-menu__item"><a href="#">what’s new</a></li>
-                                <li class="header-menu__item"><a href="#">women</a></li>
-                                <li class="header-menu__item"><a href="#">accessories</a></li>
-                                <li class="header-menu__item"><a href="#">kids</a></li>
-                                <li class="header-menu__item"><a href="#">beauty</a></li>
-                                <li class="header-menu__item"><a href="#">outlet</a></li>
-                                <li class="header-menu__item"><a href="#">stories</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </header>
-                <div class="banner-content">
-                    <span>Hello! Welcome to Aurora</span>
                 </div>
             </div>
         </div>
@@ -60,7 +64,7 @@
                 </div>
                 <form class="register-form">
                     <div class="register-form__wrap">
-                        <input type="text" id="user-email" required>
+                        <input type="text" id="user-email">
                         <label for="user-email">Your email address</label>
                     </div>
                     <button class="register-btn">
@@ -150,5 +154,6 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
