@@ -293,7 +293,8 @@
   .menu-mobile__logo {
     margin-top: 24px;
     margin-bottom: 25px;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     .menu-mobile__logo a span {
       font-family: 'Poppins';
       font-weight: bold;
@@ -301,6 +302,14 @@
       line-height: 20px;
       letter-spacing: 0.95px;
       color: #333333; }
+    .menu-mobile__logo .header-close-btn {
+      background: url(./img/icon-close.svg) no-repeat center;
+      height: 16px;
+      width: 16px;
+      display: inline-flex;
+      position: absolute;
+      left: 0;
+      top: 2px; }
   .menu-mobile__layout {
     display: flex;
     flex-direction: column;
@@ -334,6 +343,8 @@
         background: url(./img/icon-arrow.svg) no-repeat center;
         height: 12px;
         width: 7px; }
+    .menu-mobile__item .header-item-btn.header-btn__opened {
+      transform: rotate(90deg); }
   .menu-mobile__item.first-list__opened {
     position: fixed;
     width: 100%; }

@@ -371,6 +371,7 @@
             margin-top: 24px;
             margin-bottom: 25px;
             text-align: center;
+            position: relative;
             a span {
                 font-family: 'Poppins';
                 font-weight: bold;
@@ -378,6 +379,15 @@
                 line-height: 20px;
                 letter-spacing: 0.95px;
                 color: #333333;
+            }
+            .header-close-btn {
+                background: url(./img/icon-close.svg) no-repeat center;
+                height: 16px;
+                width: 16px;
+                display: inline-flex;
+                position: absolute;
+                left: 0;
+                top: 2px;
             }
         }
         &__layout {
@@ -418,6 +428,9 @@
                     height: 12px;
                     width: 7px;
                 }
+            }
+            .header-item-btn.header-btn__opened {
+                transform: rotate(90deg);
             }
         }
         &__item.first-list__opened {

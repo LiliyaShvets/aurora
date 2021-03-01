@@ -39,9 +39,11 @@ const search = document.querySelector('.search-form'),
 
 //mobile menu opened
 const menuBtn = document.querySelector('.menu-icon'),
-      menuListOpened = document.querySelector('.menu-mobile');
+      menuListOpened = document.querySelector('.menu-mobile'),
+      headerCloseBtn = document.querySelector('.header-close-btn');
 
       menuBtn.addEventListener("click", () => menuListOpened.classList.add('menu-mobile__opened'));
+      headerCloseBtn.addEventListener("click", () => menuListOpened.classList.remove('menu-mobile__opened'));
 
 // header menu item opened
 const headerBtn = document.querySelector('.header-item-btn'),
@@ -49,7 +51,9 @@ const headerBtn = document.querySelector('.header-item-btn'),
       firstList = document.querySelectorAll('menu-mobile__item')[1];
 
       headerBtn.addEventListener("click", () => headerList.classList.toggle('second__opened'));
-      headerBtn.addEventListener("click", () => firstList.classList.toggle('first-list__opened'));
+      headerBtn.addEventListener("click", () => headerBtn.classList.toggle('header-btn__opened'));
+      headerBtn.addEventListener("click", () => firstList.classList.add('first-list__opened'));
+      headerCloseBtn.addEventListener("click", () => firstList.classList.remove('first-list__opened'));
 
 // footer menu item opened
 
